@@ -1,10 +1,17 @@
 package sii.maroc;
 
 public class Ticket {
-
-	public Ticket and(String string) {
+	
+	String ticketName;
+	int numberOfItems=0;
+	public Ticket(String ticketName) {
 		// TODO Auto-generated method stub
-		return null;
+		this.ticketName=ticketName;
+	}
+	public Ticket and(String contenuTicket) {
+		// TODO Auto-generated method stub
+		Ticket ticket = new Ticket(contenuTicket);
+		return ticket;
 	}
 
 }
